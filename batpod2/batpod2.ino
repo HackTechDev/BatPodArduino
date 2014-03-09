@@ -33,7 +33,6 @@ void setup(){
     ServoGauche.attach(3); 
     ServoGauche.write(posServoGauche);
   
-    
     // Bot
     Serial.begin(9600);
     shieldbot.setMaxSpeed(128); //255 is max
@@ -41,7 +40,7 @@ void setup(){
     // Bluetooth
     pinMode(RxD, INPUT);
     pinMode(TxD, OUTPUT); 
-    //setupBlueToothConnection();
+    setupBlueToothConnection();
 }
 
 void loop(){
@@ -50,8 +49,9 @@ void loop(){
 
     while(1) {
       
-        /*
+       
         // Debug en série
+        /*
         if (Serial.available()) {
           byteRead = Serial.read();
           
