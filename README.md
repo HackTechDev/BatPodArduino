@@ -34,6 +34,10 @@ BatPod
         
  - Port série : /dev/tts0
 
+* Application de contrôle en Python par bluetooth : 
+
+  https://github.com/Nekrofage/BatPodPython
+
 * Tableau des caractères ascii :
 
 http://www.theasciicode.com.ar/ascii-printable-characters/comma-ascii-code-44.html
