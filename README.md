@@ -36,6 +36,9 @@ BatPod
 
 * Application de contrôle en Python par bluetooth : 
 
+  - Matériel : Raspberry Pi
+  - Distribution : Wheezy Raspbian 2013-0-25
+
   https://github.com/Nekrofage/BatPodPython
 
 * Tableau des caractères ascii :
