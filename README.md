@@ -12,7 +12,7 @@ BatPod
  
  Controlleur servo : 
 
- - Arduino Uno
+ - Seeeduino v3.0
  - Grove - Infrared Receiver : http://www.seeedstudio.com/wiki/Grove_-_Infrared_Receiver
  - Grove - Servo : http://www.seeedstudio.com/wiki/Grove_-_Servo
  
