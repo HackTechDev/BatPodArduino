@@ -1,6 +1,8 @@
 /*
+BatPod
 
-Arduino Uno
+- Recepteur IR
+- Servo
 
 */
 

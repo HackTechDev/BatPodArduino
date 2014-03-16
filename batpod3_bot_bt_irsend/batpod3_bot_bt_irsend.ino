@@ -1,6 +1,9 @@
 /*
    BatPod
 
+   - Envoyeur IR
+   - Bot
+
  */
 
 #include <Shieldbot.h>
