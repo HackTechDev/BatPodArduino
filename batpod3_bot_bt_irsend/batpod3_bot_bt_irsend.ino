@@ -186,26 +186,77 @@ void loop(){
                                break;
                            }
 
-                /* IR */
+                /* Infra-rouge */
 
+                /**************************************************************/
                 case 'q' : {
-                               blueToothSerial.println("Servo Gauche Avant");
-                               Serial.println("Servo Gauche Avant");
-                                 // 4
-                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    4,    5, 6, 7, 8, 9, 10};
+                               blueToothSerial.println("Servo arriere-bras gauche baisser");
+                               Serial.println("Servo arriere-bras gauche baisser");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    1,    5, 6, 7, 8, 9, 10};
                                  IR.Send(d, 38);  
                                break;
                            }
 
                  case 's' : {
-                               blueToothSerial.println("Servi Gauche Arriere");
-                               Serial.println("Servo Gauche Avant");
-                                 // 5
-                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    5,   5, 6, 7, 8, 9, 10};
+                               blueToothSerial.println("Servo arriere-bras gauche lever");
+                               Serial.println("Servo arriere-bras gauche lever");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    2,   5, 6, 7, 8, 9, 10};
+                                 IR.Send(d, 38); 
+                               break;
+                           }
+
+
+                case 'd' : {
+                               blueToothSerial.println("Servo avant-bras gauche baisser");
+                               Serial.println("Servo avant-bras gauche baisser");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    3,    5, 6, 7, 8, 9, 10};
+                                 IR.Send(d, 38);  
+                               break;
+                           }
+
+                 case 'f' : {
+                               blueToothSerial.println("Servo avant-bras gauche lever");
+                               Serial.println("Servo avant-bras gauche lever");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    4,   5, 6, 7, 8, 9, 10};
                                  IR.Send(d, 38); 
                                break;
                            }
    
+                /**************************************************************/
+  
+  
+                  case 'w' : {
+                               blueToothSerial.println("Servo arriere-bras droit baisser");
+                               Serial.println("Servo arriere-bras droit baisser");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    5,    5, 6, 7, 8, 9, 10};
+                                 IR.Send(d, 38);  
+                               break;
+                           }
+
+                 case 'x' : {
+                               blueToothSerial.println("Servo arriere-bras droit lever");
+                               Serial.println("Servo arriere-bras droit lever");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    6,   5, 6, 7, 8, 9, 10};
+                                 IR.Send(d, 38); 
+                               break;
+                           }
+
+
+                case 'c' : {
+                               blueToothSerial.println("Servo avant-bras droit baisser");
+                               Serial.println("Servo avant-bras droit baisser");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    7,    5, 6, 7, 8, 9, 10};
+                                 IR.Send(d, 38);  
+                               break;
+                           }
+
+                 case 'v' : {
+                               blueToothSerial.println("Servo avant-bras droit lever");
+                               Serial.println("Servo avant-bras droit lever");
+                                 unsigned char d[] = {15, 70, 70, 20, 60, 10, 1, 2, 3,    8,   5, 6, 7, 8, 9, 10};
+                                 IR.Send(d, 38); 
+                               break;
+                           } 
 
             }
 
